@@ -1,6 +1,6 @@
 import { apiInitializer } from "discourse/lib/api";
 
-const dictionary = new Typo("en_US", false, false, { dictionaryPath: "typo/dictionaries" });
+const dictionary = new Typo("en_US");
 
 export default apiInitializer((api) => {
   api.decorateCookedElement((element) => {
