@@ -7,6 +7,7 @@ export default apiInitializer((api) => {
     let post = element.innerText;
     post.split(' ').forEach((word) => {
       let isCorrect = dictionary.check(word);
+      console.log(word + ": " + isCorrect);
       if (!isCorrect) {
         console.log(word + ": " + dictionary.suggest(word));
       }
