@@ -6,10 +6,10 @@ export default apiInitializer((api) => {
   api.decorateCookedElement((element) => {
     let post = element.innerText;
     post.split(' ').forEach((word) => {
-      let isCorrect = dictionary.check(word);
+      let isCorrect = dictionary.check("mispelling");
       console.log(word + ": " + isCorrect);
       if (!isCorrect) {
-        console.log(word + ": " + dictionary.suggest(word));
+        console.log(word + ": " + dictionary.suggest("mispelling"));
       }
     });
   });
