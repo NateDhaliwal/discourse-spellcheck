@@ -9,8 +9,8 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
-    "en_US_aff": "assets/en_US.aff",
-    "en_US_dic": "assets/en_US.dic"
+    "en_US_aff": "assets/dictionaries/en_US.aff",
+    "en_US_dic": "assets/dictionaries/en_US.dic"
   },
   "modifiers": {}
 }
