@@ -9,7 +9,8 @@ export default apiInitializer((api) => {
       let isCorrect = dictionary.check("mispelling");
       console.log(word + ": " + isCorrect);
       if (!isCorrect) {
-        console.log(word + ": " + dictionary.suggest("mispelling"));
+        let suggestions = dictionary.suggest("mispelling");
+        console.log(word + ": " + suggestions);
       }
     });
   });
