@@ -1,5 +1,5 @@
 en:
   theme_metadata:
-    description: "TODO"
+    description: "Finds typos in posts and gives the option to correct it."
     settings:
       example_setting: "A description of a setting."
