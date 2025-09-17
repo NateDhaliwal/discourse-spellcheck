@@ -34,10 +34,10 @@ async function checkWord(word) {
 }
 
 export default apiInitializer((api) => {
-  api.decorateCookedElement(async function (element) {
+  api.decorateCookedElement(function (element) {
     let post = element.innerText;
     post.split("[\\s]").forEach((word) => {
-      await checkWord(word);
+      checkWord(word);
     });
   });
 });
