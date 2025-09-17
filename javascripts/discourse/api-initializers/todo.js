@@ -34,7 +34,7 @@ async function checkWord(word) {
 }
 
 export default apiInitializer((api) => {
-  api.decorateCookedElement(asyncfunction (element) {
+  api.decorateCookedElement(async function (element) {
     let post = element.innerText;
     post.split("[\\s]").forEach(async function eachWord(word) {
       awaitcheckWord(word);
