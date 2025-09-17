@@ -37,7 +37,7 @@ export default apiInitializer((api) => {
   api.decorateCookedElement(async function (element) {
     let post = element.innerText;
     post.split("[\\s]").forEach(async function eachWord(word) {
-      awaitcheckWord(word);
+      await checkWord(word);
     });
   });
 });
