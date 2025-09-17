@@ -24,7 +24,7 @@ async function checkText(text) {
 export default apiInitializer((api) => {
   api.decorateCookedElement(async function (element) {
     let post = element.innerText;
-    await checkWord(post.toString());
+    await checkText(post.toString());
     // post.split("[\\s]").forEach(async function eachWord(word) {
       
     // });
